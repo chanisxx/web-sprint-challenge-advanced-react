@@ -29,14 +29,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+  You need to extend the component to be a react component, then inside of the class invoke constructor(){ super()}, in which inside of there you would make a key called this.state = {}, where you can put the certain variables that are stateful there.
 
 2. Describe the different phases of the component lifecycle.
 
+the phases are mounting, updating, and unmounting
+
 3. Demonstrate an understanding of class component lifecycle methods.
+
+componentDidMount() means that all components have sucessfully rendered, componentDidUpdate() means that state has changed, and componentDidUnmount() is when the component unmounts.
 
 4. Define stateful logic.
 
+stateful logic is when code can be mutable through 'state', for example a hook that can be set to a different value depending on the use case. 
+
 5. Describe how to test a React component with React Testing Library.
+
+Arrange, Act, Assert (set up, use a method, check in comparison to actual result)
+define the test, create a function that encompasses the intent of your statement. for example, if you would like to test that the word 'dog' gets rendered, you would include in your function 
+const dog = getByText(/dog/i);
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -89,9 +100,9 @@ Your finished project must include all of the following requirements:
 
 Display a list of the plants from the server. This should be done in the class component `PlantList`.
 
-- [ ] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants`
-- [ ] Set the data to a state property called `this.state.plants`
-- [ ] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart
+- [ X ] In the `PlantList` class component, fetch data from the server you now have running - the data can be fetched from `http://localhost:3333/plants`
+- [ X ] Set the data to a state property called `this.state.plants`
+- [ X ] The render function is already built and styled. Once the data is on the state, you will see the list of plants, and you will have the functionality to add a plant to the cart
 
 #### Shopping Cart
 
